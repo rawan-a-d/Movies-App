@@ -31,6 +31,7 @@ ul {
 li {
     width: 100%;
     margin-top: 30px;
+    padding-top: 30px;
 }
 
 img {
@@ -44,4 +45,8 @@ img {
     margin-top: 2px;
     width: 50%;
     margin-left: 40px;
+}
+
+#moviename {
+    font-size: 28px;
 }

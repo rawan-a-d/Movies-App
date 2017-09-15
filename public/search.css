@@ -1,0 +1,42 @@
+body {
+    background: url('https://source.unsplash.com/2uwFEAGUm6E');
+    background-size: cover;
+    background-position: 30% 15%;
+}
+
+#searchform{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 450px ;
+    margin: 180px auto;
+}
+
+input{
+    border: 0;
+    box-shadow: none;
+    height: 30px;
+    width: 90%;
+}
+
+button {
+    float: right;
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+button:hover {
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+.fa.fa-search {
+    font-size: 23px;
+}

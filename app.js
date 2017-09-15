@@ -28,6 +28,7 @@ app.get('/result', function(req, res){
                         if(!error && respon.statusCode == 200){
                             var parsedData2 = JSON.parse(body2);
                             wholeFilms.push(parsedData2)
+                            console.log(parsedData2)
                         }
                         if( wholeFilms.length === 10){
                             res.render("result", {films: wholeFilms});                

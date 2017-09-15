@@ -1,5 +1,23 @@
-<h1>Films Page</h1>
-<form action="/result" method="GET">
-    <input type="text" name="moviename">
-    <button>Find a movie</button>
-</form>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies App</title>
+        <link rel="stylesheet" type="text/css" href="search.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+    <body>
+        <div id="searchform">
+            <!--<h1>Films Page</h1>-->
+            <form action="/result" method="GET">
+                <input type="text" class="form-control input-lg" name="moviename" placeholder="Search Movies and TV shows.." />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                <!--<input type="text" name="moviename" placeholder="Search a movie or a tv show..">
+                <button>Find a movie</button>-->
+            </form>            
+        </div>
+    </body>
+</html>
