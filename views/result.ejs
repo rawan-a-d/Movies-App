@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies App</title>
+        <link rel="stylesheet" type="text/css" href="result.css">
+    </head>   
+    <body>
+        <div id="wrapper">
+            <h1 id="header"> Movies App </h1>
+            <div id="body">
+                <ul>
+                    <% for (var i = 0; i < films.length ; i++) { %>
+                            <li>
+                                <img src= <%= films[i]["Poster"] %>>
+                                <div id="text">
+                                    <h4><strong><%= films[i]["Title"] %></strong></h4>
+                                    <p> Released in: <%= films[i]["Year"] %> </p> 
+                                    <p> Actors: <%= films[i]["Actors"] %> </p>
+                                    <p> Plot: <%= films[i]["Plot"] %> </p>
+                                </div>
+                            </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </body>

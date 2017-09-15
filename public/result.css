@@ -1,0 +1,47 @@
+body{
+    margin: 0;    
+}
+
+#wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#header {
+    height: 150px;
+    text-align: center;
+    margin-top: 0;
+    line-height: 150px;
+    color: white;
+    font-size: 60px;
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#body {
+    background-color: lightgrey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    width: 100%;
+    margin-top: 30px;
+}
+
+img {
+/*    display: inline-block;*/
+    vertical-align: top;
+}
+
+#text {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 2px;
+    width: 50%;
+    margin-left: 40px;
+}
