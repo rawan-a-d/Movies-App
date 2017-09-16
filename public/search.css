@@ -17,7 +17,9 @@ input{
     border: 0;
     box-shadow: none;
     height: 30px;
-    width: 90%;
+    width: 85%;
+    font-size: 20px;
+    padding-left: 10px;
 }
 
 button {

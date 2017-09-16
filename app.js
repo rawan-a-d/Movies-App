@@ -18,10 +18,12 @@ app.get('/result', function(req, res){
     var url = "http://www.omdbapi.com/?s=" + moviename + "&apikey=thewdb"
     request(url, function(err, response, body){
         if(!err && response.statusCode == 200){
+            var filmsNum = 0
             var parsedData = JSON.parse(body);
             var films = parsedData["Search"];
             if(parsedData["Response"] === "True"){
                 films.forEach(function(film){
+                    filmsNum += 1
                     var movieId = film["imdbID"]
                     var url2 = "http://www.omdbapi.com/?i=" + movieId + "&apikey=thewdb"
                     request(url2, function(error, respon, body2){
@@ -30,8 +32,9 @@ app.get('/result', function(req, res){
                             wholeFilms.push(parsedData2)
                             console.log(parsedData2)
                         }
-                        if( wholeFilms.length === 10){
-                            res.render("result", {films: wholeFilms});                
+                        if( wholeFilms.length === filmsNum){
+                            res.render("result", {films: wholeFilms});
+                            /*res.send(wholeFilms)*/
                         }
                     })
                 })

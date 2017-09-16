@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Movies App</title>
+        <link href="https://fonts.googleapis.com/css?family=Alegreya:400,700i,900i|Source+Sans+Pro:400,600" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="result.css">
     </head>   
     <body>
@@ -14,14 +15,54 @@
                     <ul>
                         <% for (var i = 0; i < films.length ; i++) { %>
                                 <li>
-                                    <img src= <%= films[i]["Poster"] %>>
+                                    <% if(films[i]["Poster"] === "N/A"){ %>
+                                        <h2 id="NA"> Photo is not available </h2>
+                                    <% } else { %>
+                                        <img src= <%= films[i]["Poster"] %>>
+                                    <% } %>
                                     <div id="text">
-                                        <h4 id="moviename"><strong><%= films[i]["Title"] %></strong></h4>
-                                        <p> Released in: <%= films[i]["Year"] %> </p> 
-                                        <p> Actors: <%= films[i]["Actors"] %> </p>
-                                        <p> Plot: <%= films[i]["Plot"] %> </p>
-                                        <p> Writer: <%= films[i]["Writer"] %> </p>
-                                        <p> Director: <%= films[i]["Director"] %> </p>
+                                        <h4 id="moviename"><strong> <%= films[i]["Title"] %></strong></h4>
+                                        
+                                        <% if(films[i]["Year"] === "N/A"){ %>
+                                        <% } else { %>
+                                            <span>Released in: </span> <%= films[i]["Year"] %>
+                                            <br>                                        
+                                        <% } %>
+                                        
+                                        <% if(films[i]["Genre"] === "N/A"){ %>
+                                        <% } else { %>
+                                            <span>Genre: </span> <%= films[i]["Genre"] %>
+                                            <br>                                        
+                                        <% } %>
+                                        
+                                        <% if(films[i]["imdbRating"] === "N/A"){ %>
+                                        <% } else { %>
+                                            <span>Ratings: </span> <%= films[i]["imdbRating"] %> /10
+                                            <br>                                        
+                                        <% } %>
+                                        
+                                        <% if(films[i]["Writer"] === "N/A"){ %>
+                                        <% } else { %>
+                                            <span>Writer: </span> <%= films[i]["Writer"] %>
+                                            <br>                                        
+                                        <% } %>
+                                        
+                                        <% if(films[i]["Director"] === "N/A"){ %>
+                                        <% } else { %>
+                                            <span>Director: </span> <%= films[i]["Director"] %>
+                                            <br>
+                                        <% } %>
+                            
+                                        <% if(films[i]["Actors"] === "N/A"){ %>
+                                        <% } else { %>
+                                            <span>Actors: </span> <%= films[i]["Actors"] %>
+                                            <br>
+                                        <% } %>
+                                        
+                                        <% if(films[i]["Plot"] === "N/A"){ %>
+                                        <% } else { %>
+                                            <span>Plot: </span> <%= films[i]["Plot"] %>
+                                        <% } %>
                                     </div>
                                 </li>
                         <% } %>

@@ -1,5 +1,6 @@
 body{
-    margin: 0;    
+    margin: 0;
+    background-color: #bfbebb;
 }
 
 #wrapper {
@@ -8,20 +9,28 @@ body{
 }
 
 #header {
-    height: 150px;
+    height: 180px;
     text-align: center;
-    margin-top: 0;
-    line-height: 150px;
+    margin: 0;
+    line-height: 180px;
     color: white;
-    font-size: 60px;
-    background: #093028;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    font-size: 66px;
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
+    box-sizing: border-box;
+    background: #5A3F37;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C7744, #5A3F37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #body {
-    background-color: lightgrey;
+    -webkit-box-shadow: 8px 11px 19px -5px rgba(0,0,0,0.59);
+    -moz-box-shadow: 8px 11px 19px -5px rgba(0,0,0,0.59);
+    box-shadow: 8px 11px 19px -5px rgba(0,0,0,0.59);
+    background-color: #f0f0f0;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 30px;
 }
 
 ul {
@@ -30,23 +39,52 @@ ul {
 
 li {
     width: 100%;
-    margin-top: 30px;
-    padding-top: 30px;
+    padding: 30px 0;
+    height: 500px;
 }
 
 img {
 /*    display: inline-block;*/
     vertical-align: top;
+    box-shadow: 10px 10px 5px grey;
+    height: 500px;
+    width: 350px;
 }
 
 #text {
     display: inline-block;
-    font-size: 20px;
-    margin-top: 2px;
-    width: 50%;
-    margin-left: 40px;
+    font-size: 19px;
+    font-weight: 400;
+    width: 55%;
+    margin: 0 10px;
+    margin-left: 30px;
+    line-height: 160%;
+    float: right;
+}
+
+span {
+    font-size: 23px;
+    font-weight: 600;
 }
 
 #moviename {
-    font-size: 28px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-family: 'Alegreya', serif;
+    font-weight: 'semi bold';
+    color: rgb(77, 124, 74);
+}
+
+#NA {
+    width: 250px;
+    margin-top: 200px;
+	height: auto; 
+	text-align: center;
+	display: inline-block;
+	transform: 
+	-webkit-transform: rotate(-30deg); 
+	-moz-transform: rotate(-30deg);
+	background-color: red;
+	color: #fff ;
+	margin-left: 30px;
 }
