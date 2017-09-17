@@ -1,36 +1,41 @@
-body{
+body {
     margin: 0;
     background-color: #bfbebb;
 }
 
+/* The div around Header and Content */
 #wrapper {
     width: 70%;
     margin: 0 auto;
 }
 
+/* Header */
 #header {
     height: 180px;
     text-align: center;
     margin: 0;
     line-height: 180px;
-    color: white;
     font-size: 66px;
     font-family: 'Alegreya', serif;
-    font-weight: bold;
+    font-style: italic;
+    -webkit-box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
+    -moz-box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
     box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
-    box-sizing: border-box;
+    color: white;
     background: #5A3F37;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2C7744, #5A3F37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#body {
+/* Content */
+#content {
     -webkit-box-shadow: 8px 11px 19px -5px rgba(0,0,0,0.59);
     -moz-box-shadow: 8px 11px 19px -5px rgba(0,0,0,0.59);
     box-shadow: 8px 11px 19px -5px rgba(0,0,0,0.59);
     background-color: #f0f0f0;
     font-family: 'Source Sans Pro', sans-serif;
     padding-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -38,53 +43,52 @@ ul {
 }
 
 li {
-    width: 100%;
     padding: 30px 0;
     height: 500px;
 }
 
 img {
-/*    display: inline-block;*/
-    vertical-align: top;
+    -webkit-box-shadow: 10px 10px 5px grey;
+    -moz-box-shadow: 10px 10px 5px grey;
     box-shadow: 10px 10px 5px grey;
-    height: 500px;
     width: 350px;
+    height: 100%;
 }
 
 #text {
     display: inline-block;
     font-size: 19px;
-    font-weight: 400;
     width: 55%;
-    margin: 0 10px;
-    margin-left: 30px;
+    margin: 0 10px 0 30px;
     line-height: 160%;
     float: right;
 }
 
+#moviename {
+    font-size: 34px;
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(77, 124, 74);
+}
+
+/* Headline */
 span {
     font-size: 23px;
     font-weight: 600;
 }
 
-#moviename {
-    font-size: 32px;
-    letter-spacing: 1px;
-    font-family: 'Alegreya', serif;
-    font-weight: 'semi bold';
-    color: rgb(77, 124, 74);
-}
-
+/* Unavailable img */
 #NA {
     width: 250px;
-    margin-top: 200px;
 	height: auto; 
+    margin-top: 200px;
+	margin-left: 30px;
 	text-align: center;
 	display: inline-block;
-	transform: 
+	transform: rotate(-30deg);
 	-webkit-transform: rotate(-30deg); 
 	-moz-transform: rotate(-30deg);
-	background-color: red;
-	color: #fff ;
-	margin-left: 30px;
+	background-color: #ce1515;
+	color: #fff;
 }

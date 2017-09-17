@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Movies App</title>
-        <link href="https://fonts.googleapis.com/css?family=Alegreya:400,700i,900i|Source+Sans+Pro:400,600" rel="stylesheet">
+        <title> Movies </title>
+        <link href="https://fonts.googleapis.com/css?family=Alegreya:700,700i|Source+Sans+Pro:400,600" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="result.css">
     </head>   
     <body>
         <div id="wrapper">
             <h1 id="header"> Movies App </h1>
-            <div id="body">
+            <div id="content">
                 <% if(films === null){ %>
                     <h1>Hmm... I'm not familiar with that movie. Try another one!</h1>
                 <% } else { %>
@@ -21,7 +21,7 @@
                                         <img src= <%= films[i]["Poster"] %>>
                                     <% } %>
                                     <div id="text">
-                                        <h4 id="moviename"><strong> <%= films[i]["Title"] %></strong></h4>
+                                        <h4 id="moviename"> <%= films[i]["Title"] %></h4>
                                         
                                         <% if(films[i]["Year"] === "N/A"){ %>
                                         <% } else { %>

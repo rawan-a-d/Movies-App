@@ -4,41 +4,37 @@ body {
     background-position: 30% 15%;
 }
 
+/* Form */
 #searchform{
     padding: 3px;
-    border: solid 1px #E4E4E4;
+    margin: 180px auto;
     border-radius: 6px;
     background-color: #fff;
     width: 450px ;
-    margin: 180px auto;
 }
 
 input{
-    border: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
     box-shadow: none;
     height: 30px;
     width: 85%;
-    font-size: 20px;
     padding-left: 10px;
 }
 
 button {
     float: right;
     margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: #666666;
     padding: 0 8px 0 10px;
-    border-left: solid 1px #ccc;
-}
-
-button:hover {
-    border: 0;
+    background: none;
+    color: #666666;
     box-shadow: none;
+    border: none;
     border-left: solid 1px #ccc;
 }
 
-.fa.fa-search {
+button > .fa.fa-search {
     font-size: 23px;
 }
